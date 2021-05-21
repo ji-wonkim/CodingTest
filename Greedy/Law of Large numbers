@@ -1,4 +1,4 @@
-#Law of Large numbers
+#Law of Large numbers - simple ver.
 
 n, m, k = map(int, input().split())
 data = list(map(int, input().split()))
