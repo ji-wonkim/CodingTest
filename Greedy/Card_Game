@@ -1,4 +1,5 @@
-#Card_game
+#Card_Game
+
 n, m = map(int, input().split())
 result = 0
 
