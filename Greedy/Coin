@@ -1,4 +1,4 @@
-#Greedy Algorithm - Coin.py
+#Coin
 
 money = int(input())
 coin_types = [500, 100, 50, 10]
