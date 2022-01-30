@@ -1,1 +1,1 @@
-# This repository is a coding notes.
+코딩테스트 개인 스터디
