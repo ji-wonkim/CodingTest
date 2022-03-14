@@ -1,0 +1,11 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    log = list(map(int, input().split()))
+    log.sort() #차이를 가장 작게 하려면 정렬 필요
+
+    difficulty = 0 #난이도 변수
+
+    for j in range(2, n):
+        difficulty = max(difficulty, abs(log[j] - log[j - 2]))
+    print(difficulty)
