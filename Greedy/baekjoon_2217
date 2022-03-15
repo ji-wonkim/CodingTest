@@ -1,0 +1,14 @@
+n = int(input())
+weight = []
+max_weight = []
+
+for i in range(n):
+    weight.append(int(input()))
+weight.sort(reverse = True)
+
+for i in range(n):
+    max_weight.append(weight[i] * (i + 1))
+print(max(max_weight))
+
+
+    
