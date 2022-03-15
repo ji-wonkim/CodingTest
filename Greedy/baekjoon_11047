@@ -1,0 +1,11 @@
+n, k = map(int, input().split())
+coin = []
+cnt = 0
+
+for i in range(n):
+    coin.append(int(input()))
+    
+for i in reversed(range(n)): #역순
+    cnt += k // coin[i] #몫만큼 증가
+    k %= coin[i] #나머지
+print(cnt)
