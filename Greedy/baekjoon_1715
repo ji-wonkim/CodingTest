@@ -1,0 +1,34 @@
+# 메모리 초과 에러
+n = int(input())
+card = []
+sum = 0
+
+for i in range(n):
+    card.append(int(input()))
+card.sort()
+
+for i in range(len(card) - 1):
+    sum += card[i] + card[i + 1]
+    card[i + 1] = sum
+print(sum)
+
+
+# 큐 이용
+import heapq
+
+n = int(input())
+card = []
+
+for i in range(n):
+    heapq.heappush(card, int(input()))
+    
+if len(card) == 1:
+    print(0)
+else:
+    sum = 0
+    while len(card) > 1:
+        deck1 = heapq.heappop(card)
+        deck2 = heapq.heappop(card)
+        sum += deck1 + deck2
+        heapq.heappush(card, deck1 + deck2)
+    print(sum)
