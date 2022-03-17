@@ -1,0 +1,18 @@
+n = int(input())
+time = []
+
+for i in range(n):
+    start, end = map(int, input().split())
+    time.append([start, end])
+
+time = sorted(time, key = lambda x: x[0]) #시작 시간 기준 오름차순
+time = sorted(time, key = lambda x: x[1]) #종료 시간 기준 오름차순
+
+cnt = 0
+last = 0
+
+for i, j in time:
+    if i >= last: #시작 시간이 마지막 시간보다 크거나 같을 경우
+        cnt += 1
+        last = j
+print(cnt)
