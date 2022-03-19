@@ -1,0 +1,12 @@
+n = int(input())
+dairy = [] #유제품 가격
+sum = 0
+
+for i in range(n):
+    dairy.append(int(input()))
+dairy.sort(reverse = True) #역순으로 정렬
+
+for i in range(n):
+    if i % 3 != 2: #3의 배수에 있는 수가 항상 빠짐
+        sum += dairy[i]
+print(sum)
