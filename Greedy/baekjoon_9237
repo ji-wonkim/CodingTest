@@ -1,0 +1,9 @@
+n = int(input())
+tree = list(map(int, input().split()))
+tree.sort(reverse = True) #자라는데 가장 오래 걸리는 나무부터 심는다
+
+day = 0
+for i in range(len(tree)):
+    tree[i] = tree[i] + i + 1 #심는 일 수 + 자라는 일 수
+    
+print(max(tree) + 1) #자란 다음 날 초대하므로 + 1
