@@ -1,0 +1,9 @@
+# LL이 0, 1개일 때 컵홀더는 0개 감소, LL이 2개일 때 컵홀더는 1개 감소...
+n = int(input()) #좌석 수
+seat = input()
+cnt = seat.count('LL')
+
+if(cnt <= 1):
+    print(len(seat))
+else:
+    print(len(seat) - cnt + 1)
