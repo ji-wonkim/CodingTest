@@ -35,6 +35,9 @@ return 값이 1 이상 2,000,000,000 이하의 정수가 되는 올바른 입력
 
 
 ---풀이---
+문제를 보자마자 딕셔너리를 사용해야겠다고 생각했다. 
+Dictionary 형식에 items()를 사용하여 for 문을 돌리면 key와 value를 한번에 사용할 수 있다.
+
 def solution(s):
     num_dic = {'zero':'0', 'one':'1', 'two':'2', 'three':'3', 'four':'4', 'five':'5', 
                'six':'6', 'seven':'7', 'eight':'8', 'nine':'9'}
